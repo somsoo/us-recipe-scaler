@@ -1,308 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" href="/favicon.ico">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions</title>
-    <meta name="description" content="Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.">
-    <link rel="canonical" href="https://us-recipe-scaler.enjoy-onepage.com/">
-
-    <!-- Open Graph -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
-    <meta property="og:description" content="Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.">
-    <meta property="og:url" content="https://us-recipe-scaler.enjoy-onepage.com/">
-    <meta property="og:site_name" content="Recipe Scaler & Servings Calculator">
-    <meta property="og:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
-    <meta name="twitter:description" content="Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.">
-    <meta name="twitter:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
-
-    <!-- Schema.org WebApplication -->
-    <script type="application/ld+json">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions</title>
+<meta name="description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://us-recipe-scaler.enjoy-onepage.com/">
+<meta name="theme-color" content="#c2410c">
+<link rel="icon" href="/favicon.ico">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Recipe Scaler &amp; Multiplier">
+<meta property="og:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
+<meta property="og:description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<meta property="og:url" content="https://us-recipe-scaler.enjoy-onepage.com/">
+<meta property="og:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
+<meta name="twitter:description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<meta name="twitter:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
+<link rel="alternate" type="application/rss+xml" title="Recipe Scaler &amp; Multiplier RSS" href="https://us-recipe-scaler.enjoy-onepage.com/rss.xml">
+<link rel="sitemap" type="application/xml" href="https://us-recipe-scaler.enjoy-onepage.com/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
     {
-      "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "Recipe Scaler & Servings Calculator",
+      "@id": "https://us-recipe-scaler.enjoy-onepage.com/#webapp",
+      "name": "Recipe Scaler & Multiplier",
       "url": "https://us-recipe-scaler.enjoy-onepage.com/",
-      "description": "Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.",
-      "applicationCategory": "LifestyleApplication",
+      "applicationCategory": "UtilitiesApplication",
       "operatingSystem": "All",
-      "inLanguage": "en-US",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD"
+      "inLanguage": "en",
+      "description": "A free recipe scaler. Scale an ingredient list by servings, a multiplier or pan size, with U.S. amounts rounded to measuring-cup fractions, optional spoon tidying and metric equivalents from NIST factors. Runs in your browser.",
+      "image": "https://us-recipe-scaler.enjoy-onepage.com/og-image.png",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://us-recipe-scaler.enjoy-onepage.com/#faq",
+      "mainEntity": [
+        { "@type": "Question", "name": "How do I scale a recipe by servings?",
+          "acceptedAnswer": { "@type": "Answer", "text": "Enter how many servings the recipe makes and how many you want. Every amount is multiplied by the servings you want divided by the servings the recipe makes, so going from 4 to 6 servings multiplies each amount by 1.5 and ¾ cup becomes 1 ⅛ cups." } },
+        { "@type": "Question", "name": "How does pan-size scaling work?",
+          "acceptedAnswer": { "@type": "Answer", "text": "The tool compares pan areas. A round pan's area is π × (diameter ÷ 2)², a square pan's is side × side and a rectangular pan's is width × length. The new area divided by the old one is the scale factor, assuming both pans are the same depth. Going from a 9-inch round pan (about 63.6 square inches) to a 9 × 13-inch pan (117 square inches) multiplies the recipe by about 1.84." } },
+        { "@type": "Question", "name": "How are the fractions rounded?",
+          "acceptedAnswer": { "@type": "Answer", "text": "U.S. amounts are rounded to the nearest ⅛ or ⅓ (⅛, ¼, ⅓, ⅜, ½, ⅝, ⅔, ¾ and ⅞), the sizes of standard measuring cups and spoons, and a ≈ sign marks any amount that was rounded. An amount under 1/16 of its unit shows as less than ⅛. Metric amounts show whole grams and milliliters (one decimal under 10) and kilograms and liters to two decimals." } },
+        { "@type": "Question", "name": "Does it convert cups to tablespoons and teaspoons?",
+          "acceptedAnswer": { "@type": "Answer", "text": "With Tidy spoons and cups on, an amount under ¼ cup is shown in tablespoons and an amount under 1 tablespoon in teaspoons (1 cup = 16 tablespoons, 1 tablespoon = 3 teaspoons). Teaspoons move up to tablespoons only when that gives a whole or half tablespoon, and tablespoons move up to cups only when that gives ¼, ⅓, ½, ⅔, ¾ or whole cups, so 6 teaspoons become 2 tablespoons and 12 tablespoons become ¾ cup." } },
+        { "@type": "Question", "name": "Can it convert cups of flour to grams?",
+          "acceptedAnswer": { "@type": "Answer", "text": "No. Turning a volume such as cups into a weight such as grams depends on the ingredient's density, which is different for flour, sugar and butter. The tool converts only volume to volume (cups, spoons and fluid ounces to milliliters) and weight to weight (ounces and pounds to grams)." } }
+      ]
+    }
+  ]
+}
+</script>
+<!-- ADSENSE START: loader -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2228289204702106" crossorigin="anonymous"></script>
+<!-- ADSENSE END: loader -->
+<style>
+:root{--bg:#fbf7f3;--card:#fff;--ink:#2b1a10;--muted:#5f4b3e;--accent:#c2410c;--line:#eadfd6;--r:#b91c1c}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{margin:0;max-width:100%;overflow-x:hidden}
+body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.header{background:linear-gradient(135deg,#7c2d12,#c2410c);color:#fff;text-align:center;padding:26px 16px 22px}
+.header h1{margin:0;font-size:1.7rem}
+.header-sub{margin-top:6px;font-size:.95rem}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.wrap{max-width:1080px;margin:0 auto;padding:12px 14px 8px}
+.grid2{display:grid;grid-template-columns:1fr;gap:14px}
+@media (min-width:1024px){.grid2{grid-template-columns:1fr 1fr;align-items:start}.result{position:sticky;top:12px}}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:14px 0}
+.grid2 .card{margin:0}
+.card h2{font-size:1.15rem;margin:4px 0 10px}
+.card h3{font-size:1rem;margin:14px 0 6px}
+.lbl{display:block;font-weight:600;margin:10px 0 4px;font-size:.95rem}
+.modes{border:0;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.modes legend{padding:0}
+.modes label{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;cursor:pointer;font-weight:600}
+textarea{width:100%;min-height:230px;font:inherit;font-size:1rem;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);resize:vertical}
+input[type=text],select{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink)}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+.row>div{flex:1 1 120px;min-width:0}
+.chk{display:flex;gap:8px;align-items:flex-start;margin:6px 0;font-size:.95rem}
+.btn{font:inherit;border:1px solid var(--line);background:#fff;color:var(--ink);border-radius:10px;padding:9px 14px;cursor:pointer}
+.btn.sm{padding:4px 10px;font-size:.88rem;border-radius:8px}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.err{color:var(--r);font-weight:600;margin:8px 0 0}
+.hint{font-size:.86rem;color:var(--muted);margin:6px 0}
+.factor{font-size:1.2rem;font-weight:800;margin:2px 0;overflow-wrap:anywhere}
+.out{list-style:none;padding:0;margin:8px 0}
+.out li{padding:7px 0;border-bottom:1px dashed var(--line);overflow-wrap:anywhere}
+.out li:last-child{border-bottom:0}
+.out li strong{font-variant-numeric:tabular-nums}
+.out li.keep{color:var(--muted)}
+.out li.warn{color:var(--r)}
+.notice{border-color:#fcd34d;background:#fffbeb}
+.faq-item h3{font-size:1rem;margin:12px 0 4px}
+.faq-item p{margin:0;color:#4a3528}
+.src{font-size:.82rem;color:var(--muted)}
+.ad-box{max-width:1080px;margin:10px auto;padding:0 14px;background:transparent;overflow:hidden;text-align:center}
+.ad-top ins{max-height:90px}
+.footer{text-align:center;font-size:.85rem;color:var(--muted);padding:18px 14px 28px}
+.footer a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2b1a10;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
+.toast.show{opacity:1}
+@media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>Recipe Scaler &amp; Multiplier</h1>
+  <div class="header-sub">Scale by servings, a multiplier or pan size · measuring-cup fractions · spoons and metric</div>
+</header>
+
+<!-- ADSENSE START: top -->
+<div class="ad-box ad-top">
+  <ins class="adsbygoogle" style="display:block;height:60px;max-height:90px" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3824727725" data-ad-format="horizontal" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: top -->
+
+<main class="wrap">
+  <div class="grid2">
+    <section class="card" id="editor" aria-labelledby="in-h">
+      <h2 id="in-h">1. Your recipe</h2>
+      <fieldset class="modes">
+        <legend class="lbl">Scale by</legend>
+        <label><input type="radio" name="mode" value="servings" checked> Servings</label>
+        <label><input type="radio" name="mode" value="multiply"> Multiplier</label>
+        <label><input type="radio" name="mode" value="pan"> Pan size</label>
+      </fieldset>
+      <div class="actions" role="group" aria-label="Quick multiplier">
+        <span class="hint" style="margin:0;align-self:center">Quick:</span>
+        <button type="button" class="btn sm" data-x="1/2">½ ×</button>
+        <button type="button" class="btn sm" data-x="2">2 ×</button>
+        <button type="button" class="btn sm" data-x="3">3 ×</button>
+      </div>
+      <div id="m-servings" class="row">
+        <div><label class="lbl" for="from">Recipe makes (servings)</label><input id="from" type="text" inputmode="decimal" maxlength="8" value="4"></div>
+        <div><label class="lbl" for="to">You want (servings)</label><input id="to" type="text" inputmode="decimal" maxlength="8" value="6"></div>
+      </div>
+      <div id="m-multiply" hidden>
+        <label class="lbl" for="mult">Multiply every amount by</label>
+        <input id="mult" type="text" maxlength="8" value="2" placeholder="2, 1.5 or 1/2">
+      </div>
+      <div id="m-pan" hidden>
+        <div class="row">
+          <div><label class="lbl" for="p1">Recipe pan</label><select id="p1"><option value="round" selected>Round</option><option value="square">Square</option><option value="rect">Rectangle</option></select></div>
+          <div><label class="lbl" for="a1" id="a1-l">Diameter (inches)</label><input id="a1" type="text" inputmode="decimal" maxlength="6" value="9"></div>
+          <div id="b1-w" hidden><label class="lbl" for="b1">Length (inches)</label><input id="b1" type="text" inputmode="decimal" maxlength="6" value="13"></div>
+        </div>
+        <div class="row">
+          <div><label class="lbl" for="p2">Your pan</label><select id="p2"><option value="round">Round</option><option value="square">Square</option><option value="rect" selected>Rectangle</option></select></div>
+          <div><label class="lbl" for="a2" id="a2-l">Width (inches)</label><input id="a2" type="text" inputmode="decimal" maxlength="6" value="9"></div>
+          <div id="b2-w"><label class="lbl" for="b2">Length (inches)</label><input id="b2" type="text" inputmode="decimal" maxlength="6" value="13"></div>
+        </div>
+        <p class="hint">Pan scaling compares the pans' areas and assumes both are the same depth.</p>
+      </div>
+      <label class="lbl" for="list">Ingredients (one per line)</label>
+      <textarea id="list" spellcheck="false" placeholder="Type or paste ingredients, one per line, like: 1 1/2 cups flour">2 cups all-purpose flour
+1 1/2 tsp baking powder
+1/2 tsp salt
+3/4 cup sugar
+1/3 cup milk
+2 large eggs
+1/2 cup butter, melted
+1 tsp vanilla extract
+Powdered sugar, for dusting</textarea>
+      <div class="actions">
+        <button type="button" class="btn sm" id="btn-example">Load example</button>
+        <button type="button" class="btn sm" id="btn-clear">Clear list</button>
+        <button type="button" class="btn sm" id="btn-undo" hidden>Undo clear</button>
+      </div>
+      <h3>Options</h3>
+      <label class="chk"><input type="checkbox" id="tidy" checked> <span>Tidy spoons and cups (for example ⅛ cup → 2 tbsp)</span></label>
+      <label class="chk"><input type="checkbox" id="metric"> <span>Show metric equivalents (mL and g)</span></label>
+      <p class="err" id="err" role="alert" hidden></p>
+    </section>
+
+    <section class="card result" id="res" aria-labelledby="out-h">
+      <h2 id="out-h">2. Scaled ingredients</h2>
+      <p class="factor" id="factor">× 1.5</p>
+      <p class="hint" id="areas" hidden></p>
+      <ul class="out" id="out"></ul>
+      <p class="hint" id="legend" hidden>≈ marks a rounded amount: U.S. units to the nearest ⅛ or ⅓, metric units as explained below.</p>
+      <p class="hint" id="stats"></p>
+      <p class="sr-only" id="sr-status" aria-live="polite"></p>
+      <div class="actions">
+        <button type="button" class="btn" id="btn-copy">📋 Copy scaled recipe</button>
+        <button type="button" class="btn" id="btn-share">📤 Share</button>
+      </div>
+      <p class="hint">Sharing sends the scaled list and a link with your settings. The link itself does not contain your ingredients.</p>
+    </section>
+  </div>
+
+<!-- ADSENSE START: mid (right after the result card) -->
+<div class="ad-box ad-mid">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="1186914926" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: mid -->
+
+  <section class="card" aria-labelledby="how-h">
+    <h2 id="how-h">🧮 How the scaling works</h2>
+    <ul>
+      <li><strong>Scale factor:</strong> servings you want ÷ servings the recipe makes, or your multiplier, or your pan's area ÷ the recipe pan's area (round π × (diameter ÷ 2)², square side², rectangle width × length).</li>
+      <li><strong>What is scaled:</strong> the amount at the start of each line, written as a whole number, decimal, fraction (3/4 or ¾), mixed number (1 1/2, 1-1/2 or 1½) or range (2-3 or 2 to 3). An amount joined with + or "plus", as in 1 cup plus 2 tbsp, is scaled too. Numbers later in a line, such as a can size, stay as written, and lines that don't start with an amount, like "Juice of 1 lemon", are kept unchanged.</li>
+      <li><strong>Units it reads:</strong> cups (c), tablespoons (tbsp, T), teaspoons (tsp, t), fluid ounces, pints, quarts, gallons, ounces, pounds, grams, kilograms, milliliters and liters. Other words, like "large eggs", are treated as counts.</li>
+      <li><strong>Rounding:</strong> U.S. amounts and counts go to the nearest ⅛ or ⅓, with ≈ marking a rounded amount; exact halves between two steps round up. Metric amounts show whole grams and milliliters (one decimal under 10) and kilograms and liters to two decimals.</li>
+      <li><strong>Tidy spoons and cups:</strong> under ¼ cup becomes tablespoons and under 1 tablespoon becomes teaspoons; teaspoons move up only to a whole or half tablespoon, and tablespoons only to ¼, ⅓, ½, ⅔, ¾ or whole cups. Lines with a range or a "plus" keep their units.</li>
+      <li><strong>Never scaled:</strong> a line that starts with a temperature (350°F) or a step number (1. or 1)) is kept as written.</li>
+      <li><strong>Metric equivalents:</strong> U.S. volumes are converted through cups and weights through ounces, from the exact scaled amount before rounding.</li>
+    </ul>
+    <p class="src">Unit sources, checked 2026-09-30: NIST Special Publication 811, Appendix B.8 (U.S. cup 236.5882 mL, tablespoon 14.78676 mL, teaspoon 4.928922 mL, U.S. fluid ounce 29.57353 mL, ounce (avoirdupois) 28.34952 g, pound 453.5924 g). NIST Office of Weights and Measures, Metric Kitchen cooking measurement equivalencies (1 tablespoon = ½ fluid ounce, 1 cup = 8 fluid ounces, 1 pint = 2 cups, 1 quart = 4 cups, 1 gallon = 16 cups, 1 pound = 16 ounces).</p>
+  </section>
+
+  <section class="card" id="faq" aria-labelledby="faq-h">
+    <h2 id="faq-h">❓ Frequently asked questions</h2>
+    <div class="faq-item"><h3>How do I scale a recipe by servings?</h3><p>Enter how many servings the recipe makes and how many you want. Every amount is multiplied by the servings you want divided by the servings the recipe makes, so going from 4 to 6 servings multiplies each amount by 1.5 and ¾ cup becomes 1 ⅛ cups.</p></div>
+    <div class="faq-item"><h3>How does pan-size scaling work?</h3><p>The tool compares pan areas. A round pan's area is π × (diameter ÷ 2)², a square pan's is side × side and a rectangular pan's is width × length. The new area divided by the old one is the scale factor, assuming both pans are the same depth. Going from a 9-inch round pan (about 63.6 square inches) to a 9 × 13-inch pan (117 square inches) multiplies the recipe by about 1.84.</p></div>
+    <div class="faq-item"><h3>How are the fractions rounded?</h3><p>U.S. amounts are rounded to the nearest ⅛ or ⅓ (⅛, ¼, ⅓, ⅜, ½, ⅝, ⅔, ¾ and ⅞), the sizes of standard measuring cups and spoons, and a ≈ sign marks any amount that was rounded. An amount under 1/16 of its unit shows as less than ⅛. Metric amounts show whole grams and milliliters (one decimal under 10) and kilograms and liters to two decimals.</p></div>
+    <div class="faq-item"><h3>Does it convert cups to tablespoons and teaspoons?</h3><p>With Tidy spoons and cups on, an amount under ¼ cup is shown in tablespoons and an amount under 1 tablespoon in teaspoons (1 cup = 16 tablespoons, 1 tablespoon = 3 teaspoons). Teaspoons move up to tablespoons only when that gives a whole or half tablespoon, and tablespoons move up to cups only when that gives ¼, ⅓, ½, ⅔, ¾ or whole cups, so 6 teaspoons become 2 tablespoons and 12 tablespoons become ¾ cup.</p></div>
+    <div class="faq-item"><h3>Can it convert cups of flour to grams?</h3><p>No. Turning a volume such as cups into a weight such as grams depends on the ingredient's density, which is different for flour, sugar and butter. The tool converts only volume to volume (cups, spoons and fluid ounces to milliliters) and weight to weight (ounces and pounds to grams).</p></div>
+  </section>
+
+  <section class="card notice" aria-labelledby="note-h">
+    <h2 id="note-h">⚠️ Please note</h2>
+    <p>Scaling multiplies amounts; it can't account for cooking chemistry, pan depth or your oven. Large changes may need adjusting, especially in baking, and bake times can change with pan size, so check for doneness early. Numbers inside a line, like a can size, are not changed.</p>
+  </section>
+</main>
+
+<!-- ADSENSE START: bottom -->
+<div class="ad-box ad-bottom">
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2228289204702106" data-ad-slot="3416334507" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<!-- ADSENSE END: bottom -->
+
+<footer class="footer">
+  <p>A free recipe scaler. Your ingredient list is not saved or sent to us.</p>
+  <p><a href="/disclaimer.html">Disclaimer</a> | <a href="/privacy.html">Privacy Policy</a> | <a href="/terms.html">Terms of Service</a></p>
+</footer>
+
+<div id="global-ux-toast" class="toast" role="status" aria-live="polite"></div>
+
+<!-- LOGIC START -->
+<script>
+(function () {
+  'use strict';
+  var SITE = 'https://us-recipe-scaler.enjoy-onepage.com';
+  var TOOL_NAME = 'Recipe Scaler & Multiplier';
+  /* mL and g factors in UNITS are NIST SP 811 Appendix B.8 values; quart = 2 pints (NIST Metric Kitchen). */
+  var EXAMPLE = '2 cups all-purpose flour\n1 1/2 tsp baking powder\n1/2 tsp salt\n3/4 cup sugar\n1/3 cup milk\n2 large eggs\n' +
+    '1/2 cup butter, melted\n1 tsp vanilla extract\nPowdered sugar, for dusting';
+  var DEF = { from: '4', to: '6', mult: '2', p1: 'round', a1: '9', b1: '13', p2: 'rect', a2: '9', b2: '13' };
+  var S = { mode: 'servings', from: 4, to: 6, x: 2, p1: 'round', a1: 9, b1: 13, p2: 'rect', a2: 9, b2: 13, tidy: true, metric: false,
+    raw: { from: '4', to: '6', mult: '2', a1: '9', b1: '13', a2: '9', b2: '13' } };
+  var LAST = null, cleared = null, toastTimer = null, srTimer = null;
+  var EPS = 1e-9;
+
+  /* ---------- numbers: 2, 1.5, .5, 1,000, 3/4, ¾, 1 1/2, 1-1/2, 1½ ---------- */
+  var VF = '\u00bc\u00bd\u00be\u2150-\u215e';
+  var VAL = { '\u00bc': [1, 4], '\u00bd': [1, 2], '\u00be': [3, 4], '\u2150': [1, 7], '\u2151': [1, 9], '\u2152': [1, 10],
+    '\u2153': [1, 3], '\u2154': [2, 3], '\u2155': [1, 5], '\u2156': [2, 5], '\u2157': [3, 5], '\u2158': [4, 5], '\u2159': [1, 6],
+    '\u215a': [5, 6], '\u215b': [1, 8], '\u215c': [3, 8], '\u215d': [5, 8], '\u215e': [7, 8] };
+  var NUM = '(?:\\d{1,3}(?:,\\d{3})+(?:\\.\\d+)?|\\d+\\s*[' + VF + ']|\\d+(?:\\s+|-)\\d+[\\/\\u2044]\\d+|\\d+[\\/\\u2044]\\d+|\\d*\\.\\d+|\\d+|[' + VF + '])';
+  var HEAD = new RegExp('^(\\s*(?:[-*\\u2022]\\s+)?)(' + NUM + ')(?:(?:\\s*[-\\u2013\\u2014]\\s*|\\s+to\\s+)(' + NUM + '))?');
+  var PLUS = new RegExp('^(\\s*(?:\\+|plus)\\s*)(' + NUM + ')', 'i');
+  var WHOLE = new RegExp('^' + NUM + '$');
+  function own(o, k) { return Object.prototype.hasOwnProperty.call(o, k); }
+  function vf(c) { return VAL[c][0] / VAL[c][1]; }
+  function numVal(s) {
+    var m, t = String(s).replace(/,/g, '').trim();
+    if ((m = /^(\d+)\s*(\S)$/.exec(t)) && own(VAL, m[2])) return +m[1] + vf(m[2]);
+    if ((m = /^(\d+)(?:\s+|-)(\d+)[\/\u2044](\d+)$/.exec(t))) return +m[3] ? +m[1] + m[2] / m[3] : NaN;
+    if ((m = /^(\d+)[\/\u2044](\d+)$/.exec(t))) return +m[2] ? m[1] / m[2] : NaN;
+    if (own(VAL, t)) return vf(t);
+    return /^(?:\d+|\d*\.\d+)$/.test(t) ? parseFloat(t) : NaN;
+  }
+
+  /* ---------- units (volume through cups, weight through ounces) ---------- */
+  var UNITS = [
+    { k: 'floz', re: [/^(?:fl\.?\s?oz|fluid\s+ounces?)\.?(?![A-Za-z])/i], fam: 'v', c: 1 / 8, ml: 29.57353 },
+    { k: 'cup', re: [/^(?:cups?|c)\.?(?![A-Za-z])/i], fam: 'v', c: 1, ml: 236.5882 },
+    { k: 'tbsp', re: [/^(?:tablespoons?|tbsps?|tbls?|tbs)\.?(?![A-Za-z])/i, /^T\.?(?![A-Za-z])/], fam: 'v', c: 1 / 16, ml: 14.78676 },
+    { k: 'tsp', re: [/^(?:teaspoons?|tsps?)\.?(?![A-Za-z])/i, /^t\.?(?![A-Za-z])/], fam: 'v', c: 1 / 48, ml: 4.928922 },
+    { k: 'pint', re: [/^(?:pints?|pts?)\.?(?![A-Za-z])/i], fam: 'v', c: 2, ml: 473.1765 },
+    { k: 'quart', re: [/^(?:quarts?|qts?)\.?(?![A-Za-z])/i], fam: 'v', c: 4, ml: 946.353 },
+    { k: 'gallon', re: [/^(?:gallons?|gals?)\.?(?![A-Za-z])/i], fam: 'v', c: 16, ml: 3785.412 },
+    { k: 'oz', re: [/^(?:ounces?|oz)\.?(?![A-Za-z])/i], fam: 'w', g: 28.34952 },
+    { k: 'lb', re: [/^(?:pounds?|lbs?)\.?(?![A-Za-z])/i], fam: 'w', g: 453.5924 },
+    { k: 'kg', re: [/^(?:kilogram(?:me)?s?|kgs?)\.?(?![A-Za-z])/i], fam: 'm', d: 2 },
+    { k: 'g', re: [/^(?:gram(?:me)?s?|g)\.?(?![A-Za-z])/i], fam: 'm', d: 0 },
+    { k: 'ml', re: [/^(?:millilit(?:er|re)s?|ml)\.?(?![A-Za-z])/i], fam: 'm', d: 0 },
+    { k: 'l', re: [/^(?:lit(?:er|re)s?|l)\.?(?![A-Za-z])/i], fam: 'm', d: 2 }
+  ];
+  var BY = {};
+  UNITS.forEach(function (u) { BY[u.k] = u; });
+  var G = { fam: 'm', d: 0 };
+  var WORD = /^(?:cups?|tablespoons?|teaspoons?|pints?|quarts?|gallons?|ounces?|pounds?|gram(?:me)?s?|kilogram(?:me)?s?|millilit(?:er|re)s?|lit(?:er|re)s?|fluid\s+ounces?)$/i;
+  var TNAME = { cup: ['cup', 'cups'], tbsp: ['tbsp', 'tbsp'], tsp: ['tsp', 'tsp'] };
+  var SPOON = { cup: 1, tbsp: 1 / 16, tsp: 1 / 48 };
+
+  function unitAt(s) {
+    var sp = /^\s*/.exec(s)[0], t = s.slice(sp.length);
+    for (var i = 0; i < UNITS.length; i++) {
+      for (var j = 0; j < UNITS[i].re.length; j++) {
+        var m = UNITS[i].re[j].exec(t);
+        if (m) return { u: UNITS[i], raw: m[0], len: sp.length + m[0].length };
       }
     }
-    </script>
+    return null;
+  }
+  function unitWord(raw, plural) {
+    var dot = /\.$/.test(raw) ? '.' : '', w = raw.replace(/\.$/, '');
+    if (!WORD.test(w)) return raw;
+    var base = w.replace(/s$/i, ''), up = base === base.toUpperCase();
+    return (plural ? base + (up ? 'S' : 's') : base) + dot;
+  }
+  function parseLine(line) {
+    var m = HEAD.exec(line);
+    if (!m) return null;
+    var lo = numVal(m[2]), hi = m[3] ? numVal(m[3]) : null, rest = line.slice(m[0].length);
+    if (/^\s*(?:[\u00b0\u00ba]|degrees?\b)/i.test(rest) || /^[.)](?:\s|$)/.test(rest)) return null;   /* 350°F, "1. Mix" */
+    var u = unitAt(rest);
+    var p = { pre: m[1], lo: lo, hi: hi, u: u ? u.u : null, raw: u ? u.raw : '', rest: u ? rest.slice(u.len) : rest, plus: null,
+      bad: !isFinite(lo) || (hi !== null && !isFinite(hi)) };
+    if (u && !p.bad) {
+      var pm = PLUS.exec(p.rest);
+      if (pm) {
+        var r2 = p.rest.slice(pm[0].length), u2 = unitAt(r2), v2 = numVal(pm[2]);
+        if (u2 && isFinite(v2)) { p.plus = { sep: pm[1], v: v2, u: u2.u, raw: u2.raw }; p.rest = r2.slice(u2.len); }
+      }
+    }
+    return p;
+  }
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  /* ---------- rounding to measuring-cup fractions (in 24ths: ⅛ = 3, ⅓ = 8) ---------- */
+  var STEPS = [0, 3, 6, 8, 9, 12, 15, 16, 18, 21, 24];
+  var CUPOK = { 0: 1, 6: 1, 8: 1, 12: 1, 16: 1, 18: 1 };      /* whole, ¼, ⅓, ½, ⅔, ¾ cup (in 24ths) */
+  var GLY = { 3: '\u215b', 6: '\u00bc', 8: '\u2153', 9: '\u215c', 12: '\u00bd', 15: '\u215d', 16: '\u2154', 18: '\u00be', 21: '\u215e' };
+  function nd(x, d) { return x.toLocaleString('en-US', { maximumFractionDigits: d }); }
+  function kitchen(v) {
+    var w = v * 24, base = Math.floor(w / 24 + 1e-12) * 24, r = w - base, best = 0, bd = Infinity;
+    for (var i = 0; i < STEPS.length; i++) {
+      var d = Math.abs(r - STEPS[i]);
+      if (d < bd - EPS) { bd = d; best = STEPS[i]; } else if (Math.abs(d - bd) <= EPS) { best = STEPS[i]; }   /* a tie rounds up */
+    }
+    return base + best;
+  }
+  function halfStep(v) { var w = v * 2; return Math.abs(w - Math.round(w)) < EPS; }
+  function cupStep(v) { var w = v * 24, r = Math.round(w); return Math.abs(w - r) < EPS && own(CUPOK, r % 24); }
+  function fmtK(k) { var whole = Math.floor(k / 24), rem = k - whole * 24; return rem ? (whole ? nd(whole, 0) + ' ' : '') + GLY[rem] : nd(whole, 0); }
+  function fmtAmt(v, u) {
+    if (u && u.fam === 'm') {
+      var r = u.d ? Math.round(v * 100) / 100 : v >= 10 ? Math.round(v) : Math.round(v * 10) / 10;
+      if (r === 0 && v > 0) return { s: 'less than ' + (u.d ? '0.01' : '0.1'), approx: true, lt: true, many: false };
+      return { s: nd(r, u.d ? 2 : 1), approx: Math.abs(r - v) > EPS * Math.max(1, v), many: r !== 1 };
+    }
+    var k = kitchen(v);
+    if (k === 0 && v > 0) return { s: 'less than \u215b', approx: true, lt: true, many: false };
+    return { s: fmtK(k), approx: Math.abs(k / 24 - v) > EPS * Math.max(1, v), many: k > 24 || k === 0 };
+  }
+  function tidy(x, k) {
+    var cups = x * SPOON[k];
+    if (k === 'cup' && x < 0.25 - EPS) { k = 'tbsp'; x = cups * 16; }
+    if (k === 'tbsp' && x < 1 - EPS) { k = 'tsp'; x = cups * 48; }
+    if (k === 'tsp' && x >= 3 - EPS && halfStep(cups * 16)) { k = 'tbsp'; x = cups * 16; }
+    if (k === 'tbsp' && x >= 4 - EPS && cupStep(cups)) { k = 'cup'; x = cups; }
+    return [x, k];
+  }
+  function metricEq(v1, v2, u) {
+    var per = u.ml || u.g || 0;
+    if (!per) return '';
+    var a = fmtAmt(v1 * per, G), b = v2 === null ? null : fmtAmt(v2 * per, G);
+    return ' (' + a.s + (b ? '\u2013' + b.s : '') + ' ' + (u.ml ? 'mL' : 'g') + ')';
+  }
+  function part(v1, v2, u, raw, allowTidy) {
+    var unit = u, changed = false, lo = v1;
+    if (u && allowTidy && S.tidy && v2 === null && v1 > 0 && own(SPOON, u.k)) {
+      var t = tidy(v1, u.k);
+      if (t[1] !== u.k) { changed = true; unit = BY[t[1]]; lo = t[0]; }
+    }
+    var A = fmtAmt(lo, unit), B = v2 === null ? null : fmtAmt(v2, unit), plural = B ? B.many : A.many;
+    var ut = !unit ? '' : changed ? TNAME[unit.k][plural ? 1 : 0] : unitWord(raw, plural);
+    var mark = (A.approx && !A.lt) || !!(B && B.approx && !B.lt);
+    return { amt: (mark ? '\u2248 ' : '') + A.s + (B ? '\u2013' + B.s : ''), ut: ut,
+      eq: S.metric && u ? metricEq(v1, v2, u) : '', approx: mark };
+  }
+  function scaleLine(p, f) {
+    var a = part(p.lo * f, p.hi === null ? null : p.hi * f, p.u, p.raw, !p.plus), tail = (a.ut ? ' ' + a.ut : '') + a.eq, approx = a.approx;
+    if (p.plus) {
+      var b = part(p.plus.v * f, null, p.plus.u, p.plus.raw, false);
+      tail += p.plus.sep + b.amt + ' ' + b.ut + b.eq;
+      approx = approx || b.approx;
+    }
+    var rest = p.rest.replace(/\s+$/, '');
+    if (!p.u && /^[A-Za-z]/.test(rest)) rest = ' ' + rest;
+    return { pre: p.pre.replace(/^\s+/, ''), amt: a.amt, tail: tail + rest, approx: approx };
+  }
 
-    <!-- Layout Shield: Anti 390px Horizontal Overflow -->
-    <style id="layout-shield">
-        html, body {
-            max-width: 100% !important;
-            width: 100% !important;
-            overflow-x: hidden !important;
-        }
-        main, article, .container {
-            max-width: 100% !important;
-            box-sizing: border-box !important;
-        }
-        .manual-ad-box {
-            width: 100%;
-            max-width: 960px;
-            overflow: hidden;
-            margin: 12px auto;
-        }
-        .manual-ad-box ins {
-            max-width: 100% !important;
-            display: block;
-        }
-    </style>
-  <link rel="alternate" type="application/rss+xml" title="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions" href="https://us-recipe-scaler.enjoy-onepage.com/rss.xml">
-  <link rel="sitemap" type="application/xml" href="https://us-recipe-scaler.enjoy-onepage.com/sitemap.xml">
-</head>
-<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+  /* ---------- settings ---------- */
+  var RANGE = { from: [0.1, 1000], to: [0.1, 1000], mult: [0.01, 100], a1: [1, 30], b1: [1, 30], a2: [1, 30], b2: [1, 30] };
+  var MSG = {
+    from: 'Enter how many servings the recipe makes: a number from 0.1 to 1,000.',
+    to: 'Enter how many servings you want: a number from 0.1 to 1,000.',
+    mult: 'Enter a multiplier from 0.01 to 100, such as 2, 1.5 or 1/2.',
+    pan: 'Pan sizes must be numbers from 1 to 30 inches.'
+  };
+  function $(id) { return document.getElementById(id); }
+  function on(id, ev, fn) { var el = $(id); if (el) el.addEventListener(ev, fn); }
+  function modeNow() { var r = document.querySelector('input[name=mode]:checked'); return r ? r.value : 'servings'; }
+  function val(id) {
+    var s = String($(id).value).trim().replace(/\s+/g, ' '), r = RANGE[id];
+    if (!WHOLE.test(s)) return null;
+    var v = numVal(s);
+    return isFinite(v) && v >= r[0] && v <= r[1] ? { v: v, s: s } : null;
+  }
+  function readSettings(show) {
+    var bad = {}, msgs = [];
+    S.mode = modeNow();
+    ['from', 'to', 'mult', 'a1', 'b1', 'a2', 'b2'].forEach(function (id) {
+      var r = val(id);
+      if (r) { S[id === 'mult' ? 'x' : id] = r.v; S.raw[id] = r.s; } else { bad[id] = true; }
+    });
+    S.p1 = $('p1').value; S.p2 = $('p2').value; S.tidy = $('tidy').checked; S.metric = $('metric').checked;
+    if (S.mode === 'servings') {
+      if (bad.from) msgs.push(MSG.from);
+      if (bad.to) msgs.push(MSG.to);
+    } else if (S.mode === 'multiply') {
+      if (bad.mult) msgs.push(MSG.mult);
+    } else if (bad.a1 || bad.a2 || (S.p1 === 'rect' && bad.b1) || (S.p2 === 'rect' && bad.b2)) {
+      msgs.push(MSG.pan);
+    }
+    var e = $('err');
+    if (show || !e.hidden) { e.hidden = !msgs.length; e.textContent = msgs.join(' '); }
+  }
+  function panArea(shape, a, b) { return shape === 'round' ? Math.PI * a * a / 4 : shape === 'square' ? a * a : a * b; }
+  function panName(shape, a, b) {
+    return shape === 'round' ? nd(a, 2) + '-inch round' : shape === 'square' ? nd(a, 2) + '-inch square' : nd(a, 2) + ' \u00d7 ' + nd(b, 2) + '-inch';
+  }
+  function getFactor() {
+    if (S.mode === 'multiply') return { f: S.x, label: '\u00d7 ' + S.raw.mult };
+    if (S.mode === 'pan') {
+      var A1 = panArea(S.p1, S.a1, S.b1), A2 = panArea(S.p2, S.a2, S.b2), f = A2 / A1;
+      return { f: f, label: '\u00d7 ' + nd(f, 2) + ' \u00b7 ' + panName(S.p1, S.a1, S.b1) + ' pan \u2192 ' + panName(S.p2, S.a2, S.b2) + ' pan',
+        areas: 'Pan areas: ' + nd(A1, 1) + ' sq in \u2192 ' + nd(A2, 1) + ' sq in, same depth assumed.' };
+    }
+    var g = S.to / S.from;
+    return { f: g, label: '\u00d7 ' + nd(g, 2) + ' \u00b7 ' + nd(S.from, 2) + ' \u2192 ' + nd(S.to, 2) + ' servings' };
+  }
+  var PAN_L = { round: ['Diameter (inches)', ''], square: ['Side (inches)', ''], rect: ['Width (inches)', 'Length (inches)'] };
+  function panLabels() {
+    ['1', '2'].forEach(function (i) {
+      var L = own(PAN_L, $('p' + i).value) ? PAN_L[$('p' + i).value] : PAN_L.round;
+      $('a' + i + '-l').textContent = L[0];
+      $('b' + i + '-w').hidden = !L[1];
+    });
+  }
+  function showMode() {
+    var m = modeNow();
+    $('m-servings').hidden = m !== 'servings';
+    $('m-multiply').hidden = m !== 'multiply';
+    $('m-pan').hidden = m !== 'pan';
+  }
 
-    <!-- Header -->
-    <header class="bg-white border-b border-slate-200 sticky top-0 z-40">
-        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 font-black text-slate-900 text-lg sm:text-xl tracking-tight">
-                <span class="w-8 h-8 rounded-lg bg-blue-600 text-white flex items-center justify-center text-sm font-black shadow-sm">1P</span>
-                <span>Recipe Scaler & Servings Calculator</span>
-            </a>
-            <span class="inline-flex items-center px-2.5 py-1 rounded-full text-xs font-bold bg-blue-50 text-blue-700 border border-blue-200">
-                2026 US Edition
-            </span>
-        </div>
-    </header>
+  /* ---------- render ---------- */
+  function render() {
+    var F = getFactor(), out = $('out'), text = [], scaled = 0, kept = 0, approx = false;
+    out.textContent = '';
+    String($('list').value).replace(/\r\n?/g, '\n').split('\n').forEach(function (line) {
+      var raw = line.trim();
+      if (!raw) return;
+      var li = document.createElement('li'), p = parseLine(line);
+      if (!p || p.bad) {
+        li.className = p ? 'warn' : 'keep';
+        li.textContent = raw + (p ? ' (amount not recognized, kept as written)' : '');
+        text.push(raw); kept++; out.appendChild(li);
+        return;
+      }
+      var r = scaleLine(p, F.f), strong = document.createElement('strong');
+      strong.textContent = r.amt;
+      li.appendChild(document.createTextNode(r.pre));
+      li.appendChild(strong);
+      li.appendChild(document.createTextNode(r.tail));
+      text.push((r.pre + r.amt + r.tail).replace(/\s+$/, ''));
+      scaled++; approx = approx || r.approx;
+      out.appendChild(li);
+    });
+    if (!text.length) {
+      var li0 = document.createElement('li');
+      li0.className = 'keep'; li0.textContent = 'Type or paste ingredients, one per line.';
+      out.appendChild(li0);
+    }
+    $('factor').textContent = F.label;
+    $('areas').hidden = !F.areas; $('areas').textContent = F.areas || '';
+    $('legend').hidden = !approx;
+    $('stats').textContent = text.length ? scaled + (scaled === 1 ? ' line scaled' : ' lines scaled') +
+      (kept ? ' \u00b7 ' + kept + (kept === 1 ? ' line kept as written' : ' lines kept as written') : '') : '';
+    LAST = { F: F, text: text, scaled: scaled };
+  }
+  function enc(s) { return encodeURIComponent(s); }
+  function query() {
+    var q = [], R = S.raw;
+    if (S.mode === 'multiply') { q.push('m=multiply'); if (R.mult !== DEF.mult) q.push('x=' + enc(R.mult)); }
+    else if (S.mode === 'pan') {
+      q.push('m=pan');
+      ['1', '2'].forEach(function (i) {
+        if (S['p' + i] !== DEF['p' + i]) q.push('p' + i + '=' + S['p' + i]);
+        if (R['a' + i] !== DEF['a' + i]) q.push('a' + i + '=' + enc(R['a' + i]));
+        if (S['p' + i] === 'rect' && R['b' + i] !== DEF['b' + i]) q.push('b' + i + '=' + enc(R['b' + i]));
+      });
+    } else {
+      if (R.from !== DEF.from) q.push('from=' + enc(R.from));
+      if (R.to !== DEF.to) q.push('to=' + enc(R.to));
+    }
+    if (!S.tidy) q.push('tidy=0');
+    if (S.metric) q.push('metric=1');
+    return q.length ? '?' + q.join('&') : '';
+  }
+  function link() { return SITE + '/' + query(); }
+  function updateUrl() { try { history.replaceState(null, '', location.pathname + query()); } catch (e) { /* ignore */ } }
+  function summary() {
+    return 'Scaled recipe (' + LAST.F.label + ')\n' + LAST.text.join('\n') + '\n\ud83d\udc49 ' + TOOL_NAME + ': ' + link();
+  }
+  function showToastNotification(msg) {
+    var t = $('global-ux-toast'); if (!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(toastTimer); toastTimer = setTimeout(function () { t.classList.remove('show'); }, 2200);
+  }
+  function fallbackCopy(text) {
+    var ta = document.createElement('textarea'); ta.value = text; ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+    var ok = false; try { ok = document.execCommand('copy'); } catch (e) { ok = false; }
+    document.body.removeChild(ta);
+    showToastNotification(ok ? 'Copied! Paste it anywhere to share.' : 'Could not copy. Please select the text and copy it yourself.');
+  }
+  function copyText(text) {
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(function () { showToastNotification('Copied! Paste it anywhere to share.'); }, function () { fallbackCopy(text); });
+    } else { fallbackCopy(text); }
+  }
+  function announce() {
+    clearTimeout(srTimer);
+    srTimer = setTimeout(function () {
+      if (!LAST) return;
+      $('sr-status').textContent = LAST.scaled + (LAST.scaled === 1 ? ' line' : ' lines') + ' scaled ' + LAST.F.label.split(' \u00b7 ')[0] + '.';
+    }, 1000);
+  }
+  function ready() {
+    if (LAST && LAST.text.length) return true;
+    showToastNotification('Add at least one ingredient line first.');
+    return false;
+  }
+  function refresh(show) { readSettings(show); render(); updateUrl(); announce(); }
 
-    <!-- Main Workspace -->
-    <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-        <!-- Title Banner -->
-        <div class="mb-8 text-center max-w-2xl mx-auto">
-            <h1 class="text-2xl sm:text-3xl lg:text-4xl font-black text-slate-900 tracking-tight mb-2">Recipe Scaler & Servings Calculator</h1>
-            <p class="text-sm sm:text-base text-slate-600">Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.</p>
-        </div>
+  /* ---------- events ---------- */
+  document.querySelectorAll('input[name=mode]').forEach(function (r) { r.addEventListener('change', function () { showMode(); refresh(true); }); });
+  ['from', 'to', 'mult', 'a1', 'b1', 'a2', 'b2'].forEach(function (id) {
+    on(id, 'input', function () { refresh(false); });
+    on(id, 'change', function () { refresh(true); });
+  });
+  ['p1', 'p2'].forEach(function (id) { on(id, 'change', function () { panLabels(); refresh(true); }); });
+  ['tidy', 'metric'].forEach(function (id) { on(id, 'change', function () { refresh(false); }); });
+  on('list', 'input', function () { if (cleared !== null && $('list').value) { cleared = null; $('btn-undo').hidden = true; } render(); announce(); });
+  on('editor', 'click', function (e) {
+    var b = e.target && e.target.closest ? e.target.closest('[data-x]') : null;
+    if (!b) return;
+    document.querySelector('input[name=mode][value=multiply]').checked = true;
+    $('mult').value = b.getAttribute('data-x');
+    showMode(); refresh(false);
+  });
+  on('btn-example', 'click', function () { $('list').value = EXAMPLE; cleared = null; $('btn-undo').hidden = true; render(); announce(); });
+  on('btn-clear', 'click', function () {
+    var v = $('list').value;
+    if (!v) return;
+    cleared = v; $('list').value = ''; $('btn-undo').hidden = false; render(); announce();
+    showToastNotification('List cleared. Press Undo clear to bring it back.');
+  });
+  on('btn-undo', 'click', function () {
+    if (cleared === null) return;
+    $('list').value = cleared; cleared = null; $('btn-undo').hidden = true; render(); announce();
+  });
+  on('btn-copy', 'click', function () { if (ready()) copyText(summary()); });
+  on('btn-share', 'click', function () {
+    if (!ready()) return;
+    var text = summary();
+    if (navigator.share) { navigator.share({ title: TOOL_NAME, text: text, url: link() }).catch(function (e) { if (!e || e.name !== 'AbortError') copyText(text); }); }
+    else { copyText(text); }
+  });
 
-        <!-- 2-Column Gold Standard Layout -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            <!-- Left: Input Form (6 cols) -->
-            <div class="lg:col-span-6 bg-white p-6 sm:p-8 rounded-2xl shadow-sm border border-slate-200">
-                <h2 class="text-base font-bold text-slate-900 mb-4 pb-2 border-b border-slate-100 flex items-center gap-2">
-                    <span class="w-2 h-2 rounded-full bg-blue-600"></span>
-                    <span>Input Parameters</span>
-                </h2>
-                
-        <div class="space-y-4">
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Primary Value / Amount ($)</label>
-                <div class="relative">
-                    <span class="absolute left-3 top-3 text-slate-400 font-bold">$</span>
-                    <input type="text" id="primaryVal" value="1,000" class="w-full pl-8 pr-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none" placeholder="1,000">
-                </div>
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Secondary Parameter / Multiplier</label>
-                <input type="number" id="secVal" value="12" min="1" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-            </div>
-            <div>
-                <label class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1">Calculation Category</label>
-                <select id="calcCat" class="w-full px-4 py-3 bg-white border border-slate-300 rounded-xl font-semibold text-slate-800 text-base focus:ring-2 focus:ring-blue-500 focus:outline-none">
-                    <option value="standard">Standard US Model (Benchmark)</option>
-                    <option value="conservative">Conservative Estimate (-10%)</option>
-                    <option value="growth">Accelerated Target (+15%)</option>
-                </select>
-            </div>
-        </div>
-        
-                <button type="button" onclick="calculate()" class="mt-6 w-full py-3.5 bg-blue-600 hover:bg-blue-700 active:scale-[0.99] text-white font-black text-base rounded-xl shadow-md transition duration-150 cursor-pointer whitespace-nowrap">
-                    Calculate Now
-                </button>
-            </div>
-
-            <!-- Right: Results Card (6 cols sticky) -->
-            <div class="lg:col-span-6 lg:sticky lg:top-24">
-                <div id="resultCard" class="hidden">
-                    
-        <div class="bg-blue-600 text-white p-6 rounded-2xl shadow-md mb-6">
-            <p class="text-xs uppercase font-bold tracking-wider opacity-90 mb-1">Estimated Annual Result</p>
-            <h3 id="resPrimary" class="text-3xl sm:text-4xl font-black tracking-tight">$0</h3>
-            <p class="text-xs mt-2 opacity-80">Calculated under standard US benchmarking formulas</p>
-        </div>
-        <div class="space-y-3 text-sm text-slate-700 bg-white p-5 rounded-2xl border border-slate-200">
-            <div class="flex justify-between pb-2 border-b border-slate-100">
-                <span class="text-slate-500">Monthly Equivalent:</span>
-                <span id="resMonthly" class="font-bold text-slate-900">$0</span>
-            </div>
-            <div class="flex justify-between pt-1">
-                <span class="font-bold text-slate-900">Growth / Variance Index:</span>
-                <span id="resBenchmark" class="font-black text-blue-600">0%</span>
-            </div>
-        </div>
-        
-                    <div class="mt-4 flex gap-3">
-                        <button type="button" onclick="copyResults()" class="flex-1 py-3 bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm rounded-xl transition shadow-sm cursor-pointer whitespace-nowrap">
-                            Copy Results
-                        </button>
-                        <button type="button" onclick="resetForm()" class="px-5 py-3 bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-sm rounded-xl transition cursor-pointer whitespace-nowrap">
-                            Reset
-                        </button>
-                    </div>
-                </div>
-                <!-- Initial Placeholder -->
-                <div id="placeholderCard" class="p-8 text-center border-2 border-dashed border-slate-200 rounded-2xl text-slate-400">
-                    <p class="text-sm font-semibold">Enter your inputs on the left and click "Calculate Now" to view full projections.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- E-E-A-T Editorial FAQ Accordion -->
-        <section class="mt-14 max-w-3xl mx-auto bg-white p-6 sm:p-8 rounded-2xl border border-slate-200">
-            <h2 class="text-lg sm:text-xl font-black text-slate-900 mb-4">Frequently Asked Questions</h2>
-            <div class="space-y-3">
-                
-    <!-- In-Depth Guidebook CTA Banner (4-1-4 Compliance) -->
-    <div class="mt-8 mb-8 p-6 bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl border border-indigo-100 flex flex-col sm:flex-row items-center justify-between gap-4">
-      <div>
-        <span class="inline-block px-3 py-1 bg-indigo-600 text-white text-xs font-bold rounded-full mb-2">COMPLETE 2026 HANDBOOK</span>
-        <h3 class="text-lg font-bold text-gray-900">Want to master the statutory details? Read our in-depth guide</h3>
-        <p class="text-xs text-gray-600 mt-1">Explore official calculation formulas, edge-case exemptions, and strategic checklists.</p>
-      </div>
-      <a href="/guides/guide.html" class="whitespace-nowrap px-5 py-3 bg-indigo-600 hover:bg-indigo-700 text-white font-bold rounded-xl shadow-md transition flex items-center gap-2 text-xs shrink-0">
-        Read In-Depth Guide &rarr;
-      </a>
-    </div>
-
-    <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>How accurate are these calculations?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Calculations use 2026 statutory formulas and verified standard economic models. While highly accurate for benchmarking, always consult a certified professional for individual legal or financial filings.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Is my personal or financial data stored?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        No. 100% of the computations occur locally in your browser's JavaScript engine. Zero personal or financial data is transmitted to or saved on external servers.
-                    </p>
-                </details>
-                <details class="group border border-slate-200 rounded-xl p-4 transition">
-                    <summary class="font-bold text-slate-800 text-sm cursor-pointer flex justify-between items-center select-none">
-                        <span>Can I export or share my calculation results?</span>
-                        <span class="text-blue-600 font-bold group-open:rotate-180 transition-transform">▼</span>
-                    </summary>
-                    <p class="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed">
-                        Yes! Click the "Copy Results" button to copy a formatted summary with a link directly to your clipboard for sharing via Slack, email, or messaging apps.
-                    </p>
-                </details>
-            </div>
-        </section>
-    </main>
-
-    <!-- Floating Toast Notification -->
-    <div id="toastNotification" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-slate-900 text-white px-5 py-2.5 rounded-full text-xs font-bold shadow-2xl opacity-0 pointer-events-none transition-opacity duration-200 z-50">
-        Copied to clipboard!
-    </div>
-
-    <!-- Modern Trust Footer -->
-    <footer class="bg-white border-t border-slate-200 py-8 text-center text-xs text-slate-500 mt-12">
-        <div class="max-w-6xl mx-auto px-4 space-y-3">
-            <div class="flex flex-wrap justify-center gap-x-6 gap-y-2 font-semibold text-slate-600">
-                <a href="/terms.html" class="hover:text-blue-600 transition">Terms of Service</a>
-                <span class="text-slate-300">|</span>
-                <a href="/privacy.html" class="hover:text-blue-600 transition">Privacy Policy</a>
-                <span class="text-slate-300">|</span>
-                <a href="/disclaimer.html" class="hover:text-blue-600 transition">Disclaimer</a>
-            </div>
-            <p class="max-w-xl mx-auto text-slate-400">
-                This tool is provided for educational and estimation purposes only. All calculations run client-side.
-            </p>
-            <p>&copy; 2026 Recipe Scaler & Servings Calculator. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Logic Script -->
-    <script>
-        
-        function calculate() {
-            const prim = parseFloat(document.getElementById('primaryVal').value.replace(/,/g, '')) || 0;
-            const sec = parseFloat(document.getElementById('secVal').value) || 1;
-            const cat = document.getElementById('calcCat').value;
-            
-            let mult = 1.0;
-            if (cat === 'conservative') mult = 0.90;
-            if (cat === 'growth') mult = 1.15;
-            
-            const total = prim * sec * mult;
-            const monthly = total / 12;
-            const rate = ((total / (prim || 1)) * 10).toFixed(1);
-            
-            document.getElementById('resPrimary').textContent = '$' + Math.round(total).toLocaleString('en-US');
-            document.getElementById('resMonthly').textContent = '$' + Math.round(monthly).toLocaleString('en-US');
-            document.getElementById('resBenchmark').textContent = rate + '%';
-            
-            document.getElementById('resultCard').classList.remove('hidden');
-        }
-        
-
-        function copyResults() {
-            const resCard = document.getElementById('resultCard');
-            const lines = [];
-            lines.push("Recipe Scaler & Servings Calculator - Calculation Summary");
-            lines.push("=============================");
-            resCard.querySelectorAll('.flex.justify-between').forEach(el => {
-                const k = el.querySelector('span:first-child')?.innerText || '';
-                const v = el.querySelector('span:last-child')?.innerText || '';
-                if (k && v) lines.push(k + ' ' + v);
-            });
-            lines.push("-----------------------------");
-            lines.push("👉 Try it here: https://us-recipe-scaler.enjoy-onepage.com/");
-            
-            const textToCopy = lines.join('\n');
-            if (navigator.clipboard) {
-                navigator.clipboard.writeText(textToCopy).then(() => showToast());
-            } else {
-                const ta = document.createElement('textarea');
-                ta.value = textToCopy;
-                document.body.appendChild(ta);
-                ta.select();
-                document.execCommand('copy');
-                document.body.removeChild(ta);
-                showToast();
-            }
-        }
-
-        function showToast() {
-            const t = document.getElementById('toastNotification');
-            t.classList.remove('opacity-0', 'pointer-events-none');
-            setTimeout(() => {
-                t.classList.add('opacity-0', 'pointer-events-none');
-            }, 2200);
-        }
-
-        function resetForm() {
-            document.getElementById('resultCard').classList.add('hidden');
-            document.getElementById('placeholderCard').classList.remove('hidden');
-        }
-
-        // Auto calculate on load
-        window.addEventListener('DOMContentLoaded', () => {
-            calculate();
-            document.getElementById('placeholderCard').classList.add('hidden');
-        });
-    </script>
+  /* ---------- start: link values (?m=pan&p1=square&a1=8&tidy=0&metric=1) ---------- */
+  (function init() {
+    var q; try { q = new URLSearchParams(location.search); } catch (e) { q = null; }
+    if (q) {
+      var m = q.get('m');
+      if (m === 'multiply' || m === 'pan') document.querySelector('input[name=mode][value=' + m + ']').checked = true;
+      [['from', 'from'], ['to', 'to'], ['x', 'mult'], ['a1', 'a1'], ['b1', 'b1'], ['a2', 'a2'], ['b2', 'b2']].forEach(function (pr) {
+        var v = q.get(pr[0]);
+        if (v === null) return;
+        var old = $(pr[1]).value;
+        $(pr[1]).value = v;
+        if (!val(pr[1])) $(pr[1]).value = old;
+      });
+      ['p1', 'p2'].forEach(function (id) { var v = q.get(id); if (v === 'round' || v === 'square' || v === 'rect') $(id).value = v; });
+      if (q.get('tidy') === '0') $('tidy').checked = false;
+      if (q.get('metric') === '1') $('metric').checked = true;
+    }
+    showMode(); panLabels(); readSettings(false); render();
+  })();
+})();
+</script>
+<!-- LOGIC END -->
 </body>
 </html>

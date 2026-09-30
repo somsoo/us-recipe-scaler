@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title>Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</title>
+  <title>Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions</title>
   <link>https://us-recipe-scaler.enjoy-onepage.com/</link>
-  <description>Scale baking and cooking recipes up or down by servings or pan size. Automatically converts fractions and cooking units.</description>
+  <description>Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.</description>
   <language>en-us</language>
   <atom:link href="https://us-recipe-scaler.enjoy-onepage.com/rss.xml" rel="self" type="application/rss+xml" />
-  <lastBuildDate>Tue, 29 Sep 2026 06:02:49 +0000</lastBuildDate>
+  <lastBuildDate>Wed, 30 Sep 2026 00:13:06 +0000</lastBuildDate>
   <item>
-    <title>Disclaimer | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</title>
+    <title>Disclaimer | Recipe Scaler &amp; Multiplier</title>
     <link>https://us-recipe-scaler.enjoy-onepage.com/disclaimer.html</link>
     <guid isPermaLink="true">https://us-recipe-scaler.enjoy-onepage.com/disclaimer.html</guid>
-    <description>Disclaimer | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</description>
-    <pubDate>Sun, 20 Sep 2026 22:13:01 +0900</pubDate>
+    <description>Disclaimer for the Recipe Scaler &amp; Multiplier.</description>
+    <pubDate>Wed, 30 Sep 2026 00:13:06 +0000</pubDate>
   </item>
   <item>
-    <title>Terms of Service | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</title>
-    <link>https://us-recipe-scaler.enjoy-onepage.com/terms.html</link>
-    <guid isPermaLink="true">https://us-recipe-scaler.enjoy-onepage.com/terms.html</guid>
-    <description>Terms of Service | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</description>
-    <pubDate>Sun, 20 Sep 2026 22:13:01 +0900</pubDate>
-  </item>
-  <item>
-    <title>Privacy Policy | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</title>
+    <title>Privacy Policy | Recipe Scaler &amp; Multiplier</title>
     <link>https://us-recipe-scaler.enjoy-onepage.com/privacy.html</link>
     <guid isPermaLink="true">https://us-recipe-scaler.enjoy-onepage.com/privacy.html</guid>
-    <description>Privacy Policy | Recipe Ingredient Scaler &amp; Multiplier | Servings &amp; Fractions Converter</description>
-    <pubDate>Sun, 20 Sep 2026 22:13:01 +0900</pubDate>
+    <description>Privacy Policy for the Recipe Scaler &amp; Multiplier.</description>
+    <pubDate>Wed, 30 Sep 2026 00:13:06 +0000</pubDate>
+  </item>
+  <item>
+    <title>Terms of Service | Recipe Scaler &amp; Multiplier</title>
+    <link>https://us-recipe-scaler.enjoy-onepage.com/terms.html</link>
+    <guid isPermaLink="true">https://us-recipe-scaler.enjoy-onepage.com/terms.html</guid>
+    <description>Terms of Service for the Recipe Scaler &amp; Multiplier.</description>
+    <pubDate>Wed, 30 Sep 2026 00:13:06 +0000</pubDate>
   </item>
 </channel>
 </rss>
