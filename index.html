@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions</title>
-<meta name="description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<title>Recipe Scaler &amp; Multiplier | Adjust</title>
+<meta name="description" content="Scale any recipe by servings, a multiplier or pan size.">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://us-recipe-scaler.enjoy-onepage.com/">
 <meta name="theme-color" content="#c2410c">
@@ -12,13 +12,13 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Recipe Scaler &amp; Multiplier">
-<meta property="og:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
-<meta property="og:description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<meta property="og:title" content="Recipe Scaler &amp; Multiplier | Adjust">
+<meta property="og:description" content="Scale any recipe by servings, a multiplier or pan size.">
 <meta property="og:url" content="https://us-recipe-scaler.enjoy-onepage.com/">
 <meta property="og:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Recipe Scaler &amp; Multiplier | Adjust Servings &amp; Fractions">
-<meta name="twitter:description" content="Scale any recipe by servings, a multiplier or pan size. Paste your ingredients for kitchen fractions, spoon conversions and metric. Free and private.">
+<meta name="twitter:title" content="Recipe Scaler &amp; Multiplier | Adjust">
+<meta name="twitter:description" content="Scale any recipe by servings, a multiplier or pan size.">
 <meta name="twitter:image" content="https://us-recipe-scaler.enjoy-onepage.com/og-image.png">
 <link rel="alternate" type="application/rss+xml" title="Recipe Scaler &amp; Multiplier RSS" href="https://us-recipe-scaler.enjoy-onepage.com/rss.xml">
 <link rel="sitemap" type="application/xml" href="https://us-recipe-scaler.enjoy-onepage.com/sitemap.xml">
@@ -109,6 +109,25 @@ input[type=text],select{width:100%;font:inherit;padding:8px 10px;border:1px soli
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#2b1a10;color:#fff;padding:10px 18px;border-radius:999px;font-size:.9rem;opacity:0;pointer-events:none;transition:opacity .2s;z-index:50;max-width:90vw}
 .toast.show{opacity:1}
 @media (prefers-reduced-motion: reduce){.toast{transition:none}}
+</style>
+<script id="math-guard">
+// Global Math & DOM Output Guard: prevents NaN / Infinity leaks to UI
+(function() {
+  const origToLocaleString = Number.prototype.toLocaleString;
+  Number.prototype.toLocaleString = function(locales, options) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToLocaleString.call(this, locales, options);
+  };
+  const origToFixed = Number.prototype.toFixed;
+  Number.prototype.toFixed = function(digits) {
+    if (!Number.isFinite(this.valueOf())) return '0';
+    return origToFixed.call(this, digits);
+  };
+})();
+</script>
+<style id="ad-cls-shield">
+  .ad-bottom { min-height: 280px !important; }
+  .ad-bottom ins { min-height: 280px !important; }
 </style>
 </head>
 <body>
